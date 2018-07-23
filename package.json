@@ -1,12 +1,16 @@
 {
-  "name": "react-native-popup-dialog",
-  "version": "0.14.52",
+  "name": "react-native-popup-dialog-hendra",
+  "version": "1.0.0",
   "description": "React Native Popup Dialog for IOS & Android.",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "build": "npm run clean && babel src/ -d dist/",
     "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hendradedis/react-native-popup-dialog.git"
   },
   "keywords": [
     "dialog",
