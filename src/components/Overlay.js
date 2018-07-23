@@ -17,6 +17,9 @@ const styles = StyleSheet.create({
     left: 0,
     position: 'absolute',
   },
+  image: {
+    resizeMode: 'cover',
+  },
 });
 
 class Overlay extends Component {
@@ -67,11 +70,12 @@ class Overlay extends Component {
     };
 
     return (
-      <Animated.View
+      <Animated.Image
+        source={require('../assets/blur.jpeg')}
         pointerEvents={pointerEvents}
         style={[
           styles.overlay,
-          { backgroundColor },
+          styles.image,
           { opacity },
           dimensions,
         ]}
@@ -80,7 +84,7 @@ class Overlay extends Component {
           onPress={onPress}
           style={[styles.overlay, dimensions]}
         />
-      </Animated.View>
+      </Animated.Image>
     );
   }
 }
