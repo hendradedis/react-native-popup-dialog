@@ -71,7 +71,7 @@ class Overlay extends Component {
 
     return (
       <Animated.Image
-        source={require('../assets/blur.jpeg')}
+        source={require('../assets/Screenshot.png')}
         pointerEvents={pointerEvents}
         style={[
           styles.overlay,
@@ -79,6 +79,7 @@ class Overlay extends Component {
           { opacity },
           dimensions,
         ]}
+        blurRadius={3}
       >
         <TouchableOpacity
           onPress={onPress}
