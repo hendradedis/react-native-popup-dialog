@@ -79,7 +79,7 @@ class Overlay extends Component {
           { opacity },
           dimensions,
         ]}
-        blurRadius={3}
+        blurRadius={2}
       >
         <TouchableOpacity
           onPress={onPress}
